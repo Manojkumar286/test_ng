@@ -6,7 +6,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Baseclass.baseclass;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CrossBrowserTest extends baseclass {
 	
@@ -14,10 +13,10 @@ public class CrossBrowserTest extends baseclass {
 	@Parameters("browser")
 	private void browserLaunch(String browser) {
 		if (browser.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
+//			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browser.equals("edge")) {
-			WebDriverManager.edgedriver().setup();
+//			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
 	}
