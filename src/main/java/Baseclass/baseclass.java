@@ -18,7 +18,8 @@ public class baseclass {
 	public static void browserlaunch(String browser) {
 		try {
 			if (browser.equals("chrome")) {
-				WebDriverManager.chromedriver().setup();
+//				WebDriverManager.chromedriver().setup();
+				System.setProperty("webdriver.chrome.driver",".\\Driver\\chromedriver.exe");
 				driver = new ChromeDriver();
 			} else if (browser.equals("edge")) {
 				WebDriverManager.edgedriver().setup();
