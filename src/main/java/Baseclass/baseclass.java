@@ -21,6 +21,7 @@ public class baseclass {
 				System.setProperty("webdriver.chrome.driver",".\\Driver\\chromedriver.exe");
 				driver = new ChromeDriver();
 			} else if (browser.equals("edge")) {
+				System.setProperty("webdriver.edge.driver",".\\Driver\\msedgedriver.exe");
 				driver = new EdgeDriver();
 			}
 		} catch (Exception e) {

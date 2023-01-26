@@ -12,7 +12,7 @@ public class Insta_login extends baseclass {
 	
 	@Given("User Browser Launch")
 	public void user_browser_launch() {
-	  browserlaunch("chrome");
+	  browserlaunch("edge");
 	    
 	}
 	@Given("User Navigate To Url")
