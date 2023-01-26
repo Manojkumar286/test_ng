@@ -1,5 +1,6 @@
 
 Feature: Instagram Login Test Case-Automation 
+
   @Insta
   Scenario: Instagram Login With Valid Details
   Given User Browser Launch

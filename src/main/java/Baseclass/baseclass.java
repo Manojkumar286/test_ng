@@ -1,5 +1,6 @@
 package Baseclass;
 
+import java.time.Duration;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -25,7 +26,7 @@ public class baseclass {
 		} catch (Exception e) {
 			System.out.println("Unable to get browser :" + e.getMessage());
 		}
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		windowmax();
 	}
 
